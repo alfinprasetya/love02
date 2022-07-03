@@ -1,7 +1,7 @@
 
 TitlescreenState = class{__includes = BaseState}
 
-local MSG_IMAGE = love.graphics.newImage('sprites/Title.png')
+local MSG_IMAGE = love.graphics.newImage('sprites/message.png')
 local scale = 1.2
 local msgWidth = MSG_IMAGE:getWidth() * scale
 local msgHeight = MSG_IMAGE:getHeight() * scale
@@ -21,9 +21,6 @@ function TitlescreenState:update(dt)
 end
 
 function TitlescreenState:render()
-  
-  love.graphics.printf('Flappy Bird', 0, height/2-160, width, 'center')
-  
   love.graphics.draw(MSG_IMAGE,
     (width - msgWidth)/2,
     (height - msgHeight)/2,
