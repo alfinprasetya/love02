@@ -67,12 +67,12 @@ function love.load()
   }
   gStateMachine:change('title')
   
-  --Variable to detect touch
+  --Variable to detect mouse click
   clicked = false
 end
 
---Touch function
-function love.touchpressed()
+--Mouse function
+function love.mousepressed()
   clicked = true
 end
 
