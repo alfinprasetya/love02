@@ -55,8 +55,8 @@ function love.load()
   }
   
   --Initialize game window
-  width = love.graphics.getHeight() + 25
-  height = love.graphics.getWidth() + 25
+  width = 400
+  height = 720
   love.window.setMode(width, height)
   
   --Initialize state machine
