@@ -18,7 +18,7 @@ end
 
 function ScoreState:render()
   love.graphics.setFont(smallFont)
-  love.graphics.printf('Oof! You lost!', 0, height/2-40, width, 'center')
-  love.graphics.printf('Score: ' .. tostring(self.score), 0, height/2, width, 'center')
-  love.graphics.printf('Tap to Play Again!', 0, height/2+40, width, 'center')
+  love.graphics.printf('OOF! YOU LOST!', 0, height/2-40, width, 'center')
+  love.graphics.printf('SCORE: ' .. tostring(self.score), 0, height/2, width, 'center')
+  love.graphics.printf('TAP TO PLAY AGAIN!', 0, height/2+40, width, 'center')
 end
